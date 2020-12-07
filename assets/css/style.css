@@ -67,8 +67,9 @@ h3 {
 }
 img{
   position: relative;
-  left: 220%;
-  bottom: 180px;
+  left: 210%;
+  bottom: 200px;
+  width: 30px;
 }
 .inner + .inner {
   margin-left: 120px;
@@ -76,21 +77,21 @@ img{
 .first-card {
   background: linear-gradient(
     90deg,
-    rgba(255, 189, 154, 1) 0%,
-    rgba(247, 133, 151, 1) 100%
+    rgb(252, 192, 160) 0%,
+    rgb(247, 103, 125) 100%
   );
 }
 .second-card {
   background: linear-gradient(
     90deg,
-    rgba(141, 200, 246, 1) 0%,
-    rgba(25, 146, 229, 1) 100%
+    rgb(151, 206, 248) 0%,
+    rgb(0, 121, 202) 100%
   );
 }
 .third-card {
   background: linear-gradient(
     90deg,
-    rgba(126, 217, 210, 1) 0%,
-    rgba(3, 210, 185, 1) 100%
+    rgb(137, 214, 208) 0%,
+    rgb(1, 175, 155) 100%
   );
 }
