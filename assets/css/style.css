@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --border-radius: 30px;
+  --first-circle-size: 150px;
+  --second-circle-size: 200px;
+}
+.wrapper {
+  margin-left: 30px;
+  margin-top: 150px;
+  display: inline-block;
+  max-width: 100vw;
+}
+.inner {
+  min-height: 200px;
+  max-height: 200px;
+  min-width: 600px;
+  max-width: 700px;
+  display: inline-block;
+  border-radius: var(--border-radius);
+}
+.inner::before,
+.inner::after {
+  content: "";
+  /* position: absolute; */
+  display: inline-block;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 30%;
+  overflow: hidden;
+}
+.inner::before {
+  height: var(--first-circle-size);
+  width: var(--first-circle-size);
+  position: relative;
+  left: 80%;
+  top: -10px;
+}
+.inner::after {
+  width: var(--second-circle-size);
+  height: var(--second-circle-size);
+  position: relative;
+  top: -200px;
+  left: 71%;
+}
+.inbox-text {
+  position: relative;
+  top: -130px;
+  left: 40px;
+  font-family: sans-serif;
+  color: white;
+  max-width: 200px;
+}
+h1 {
+  font-size: 1.3em;
+}
+h2 {
+  padding-top: 15px;
+  font-size: 2.3em;
+}
+h3 {
+  font-size: 1.1em;
+  padding-top: 35px;
+}
+.inner + .inner {
+  margin-left: 120px;
+}
+.first-card {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 189, 154, 1) 0%,
+    rgba(247, 133, 151, 1) 100%
+  );
+}
+.second-card {
+  background: linear-gradient(
+    90deg,
+    rgba(141, 200, 246, 1) 0%,
+    rgba(25, 146, 229, 1) 100%
+  );
+}
+.third-card {
+  background: linear-gradient(
+    90deg,
+    rgba(126, 217, 210, 1) 0%,
+    rgba(3, 210, 185, 1) 100%
+  );
+}
